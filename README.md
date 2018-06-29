@@ -1,4 +1,7 @@
-# Spectacle Boilerplate
+# A React presentation
+This project is build with [Spectacle](https://github.com/FormidableLabs/spectacle)
+
+The goal of this project is to show how to build a react app with all workflow it needs 🔥🔥
 
 ## Contents
 
@@ -46,3 +49,5 @@ If you want to deploy the slideshow to surge, run
 ```bash
 npm run deploy
 ```
+
+Made with ❤ by Tizano
