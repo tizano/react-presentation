@@ -35,6 +35,18 @@ import ResultBeginCode from "../assets/images/code/result_begin_code.svg";
 import ResultBegin from "../assets/images/code/result_begin.png";
 import NpmInstall from "../assets/images/code/npm_install.svg";
 import NpmStart from "../assets/images/code/npm_start.svg";
+import VarLetConst from "../assets/images/code/var_let_const.svg";
+import ScopeLetConst from "../assets/images/code/scope_let_const.svg";
+import Eslint from "../assets/images/code/eslint.svg";
+import EslintCode from "../assets/images/code/eslint_code.png";
+import Airbnb from "../assets/images/code/airbnb.svg";
+import Paypal from "../assets/images/code/paypal.svg";
+import Wix from "../assets/images/code/wix.svg";
+import Netflix from "../assets/images/code/netflix.svg";
+import Destruct from "../assets/images/code/destruct.svg";
+import Spread from "../assets/images/code/spread.svg";
+import Spread2 from "../assets/images/code/spread_2.svg";
+import ArrowF from "../assets/images/code/arrow_function.svg";
 // import ReactPicture from "../assets/images/react-picture.png";
 // import City from "../assets/images/city.jpg";
 
@@ -263,28 +275,109 @@ export default class Presentation extends React.Component {
           <Heading textColor="primary" caps fit>
             Exemple de const & let
           </Heading>
+          <Appear>
+            <Image src={VarLetConst} />
+          </Appear>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="tertiary">
+          <Heading textColor="primary" caps fit>
+            La portée des variables
+          </Heading>
+          <Appear>
+            <Image margin="-2rem auto" src={ScopeLetConst} width="800" />
+          </Appear>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="tertiary">
+          <Heading textColor="primary" caps fit>
+            Comment éviter les erreurs ?
+          </Heading>
+          <Text margin="2rem 0 0" textColor="secondary">
+            Créer ou modifier le fichier <strong>.eslintrc.js</strong>
+          </Text>
+          <Appear>
+            <Image margin="-1rem auto" src={Eslint} width="800" />
+          </Appear>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="tertiary">
+          <Heading textColor="primary" caps fit>
+            Comment éviter les erreurs ?
+          </Heading>
+          <Text margin="2rem 0 0" textColor="secondary">
+            Une erreur dans le composant Box
+          </Text>
+          <Appear>
+            <Image margin="2rem auto" src={EslintCode} />
+          </Appear>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="tertiary">
+          <Heading textColor="primary" caps fit>
+            Qui a dicté toutes ces règles ?
+          </Heading>
+          <Appear>
+            <Image margin="2rem auto" src={Airbnb} width="200" />
+          </Appear>
+          <Appear>
+            <Text textSize="1.5rem" margin="1.5rem 0 0" textColor="secondary">
+              AIRBNB
+            </Text>
+          </Appear>
+          <Appear>
+            <Text margin="2rem 0 2rem 0" textColor="secondary">
+              D'autres acteurs majeurs participent aussi
+            </Text>
+          </Appear>
           <Layout>
             <Fill>
               <Appear>
-                <Text margin="2rem 0 0" textColor="secondary" textSize="1.5rem">
-                  Installer les packages
-                </Text>
-              </Appear>
-              <Appear>
-                <Image margin="-2rem auto" src={NpmInstall} width="400" />
+                <Image margin="2rem auto" src={Paypal} width="150" />
               </Appear>
             </Fill>
             <Fill>
               <Appear>
-                <Text margin="2rem 0 0" textColor="secondary" textSize="1.5rem">
-                  Lancer l'app en mode dev
-                </Text>
+                <Image margin="2rem auto" src={Netflix} width="270" />
               </Appear>
+            </Fill>
+            <Fill>
               <Appear>
-                <Image margin="-2rem auto" src={NpmStart} width="400" />
+                <Image margin="2rem auto" src={Wix} width="150" />
               </Appear>
             </Fill>
           </Layout>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="tertiary">
+          <Heading textColor="primary" caps fit>
+            Les patterns importants : en Javascript
+          </Heading>
+          <Text margin="2rem 0 0" textColor="secondary">
+            Destructuring assignment<br />
+            (Affectation par destructuration)
+          </Text>
+          <Image margin="-2rem auto" src={Destruct} width="800" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="tertiary">
+          <Heading textColor="primary" caps fit>
+            Les patterns importants : en Javascript
+          </Heading>
+          <Text margin="2rem 0 0" textColor="secondary">
+            Spread operator<br />
+            (Syntaxe de décomposition)
+          </Text>
+          <Appear>
+            <Image margin="-2rem auto" src={Spread} width="600" />
+          </Appear>
+          <Appear>
+            <Image margin="-2rem auto" src={Spread2} width="700" />
+          </Appear>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="tertiary">
+          <Heading textColor="primary" caps fit>
+            Les patterns importants : en Javascript
+          </Heading>
+          <Text margin="2rem 0 0" textColor="secondary">
+            Arrow function<br />
+            (Fonction fléchée)
+          </Text>
+          <Image margin="-2rem auto" src={ArrowF} width="800" />
         </Slide>
         <Slide transition={["side", "fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
