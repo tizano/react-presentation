@@ -46,7 +46,17 @@ import Netflix from "../assets/images/code/netflix.svg";
 import Destruct from "../assets/images/code/destruct.svg";
 import Spread from "../assets/images/code/spread.svg";
 import Spread2 from "../assets/images/code/spread_2.svg";
+import Function from "../assets/images/code/function.svg";
 import ArrowF from "../assets/images/code/arrow_function.svg";
+import ClassBox1 from "../assets/images/code/class_box_1.svg";
+import ClassBox2 from "../assets/images/code/class_box_2.svg";
+import ClassButton1 from "../assets/images/code/class_button_1.svg";
+import ClassButton2 from "../assets/images/code/class_button_2.svg";
+import LifeCycle from "../assets/images/code/lifecycle.png";
+import InputChange from "../assets/images/code/input_change.svg";
+import ListBegin from "../assets/images/code/list_begin.svg";
+import ListFetch from "../assets/images/code/list_fetch.svg";
+import ListLoader from "../assets/images/code/list_loader.png";
 // import ReactPicture from "../assets/images/react-picture.png";
 // import City from "../assets/images/city.jpg";
 
@@ -58,9 +68,9 @@ const theme = createTheme({
   primary: "white",
   secondary: "#1F2022",
   tertiary: "#03A9FC",
-  quarternary: "#CECECE",
+  quarternary: "#e1e1e1",
+  bgOrange: "#f65b54",
   react: "#61dafb",
-  bg: "#f65b54",
   bgReact: "#282c34"
 }, {
   primary: "Montserrat",
@@ -344,21 +354,21 @@ export default class Presentation extends React.Component {
             </Fill>
           </Layout>
         </Slide>
-        <Slide transition={["slide", "zoom"]} bgColor="tertiary">
-          <Heading textColor="primary" caps fit>
+        <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
+          <Heading textColor="secondary" caps fit>
             Les patterns importants : en Javascript
           </Heading>
-          <Text margin="2rem 0 0" textColor="secondary">
+          <Text margin="2rem 0 0" textColor="primary">
             Destructuring assignment<br />
             (Affectation par destructuration)
           </Text>
           <Image margin="-2rem auto" src={Destruct} width="800" />
         </Slide>
-        <Slide transition={["slide", "zoom"]} bgColor="tertiary">
-          <Heading textColor="primary" caps fit>
+        <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
+          <Heading textColor="secondary" caps fit>
             Les patterns importants : en Javascript
           </Heading>
-          <Text margin="2rem 0 0" textColor="secondary">
+          <Text margin="2rem 0 0" textColor="primary">
             Spread operator<br />
             (Syntaxe de décomposition)
           </Text>
@@ -369,15 +379,148 @@ export default class Presentation extends React.Component {
             <Image margin="-2rem auto" src={Spread2} width="700" />
           </Appear>
         </Slide>
-        <Slide transition={["slide", "zoom"]} bgColor="tertiary">
-          <Heading textColor="primary" caps fit>
+        <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
+          <Heading textColor="secondary" caps fit>
             Les patterns importants : en Javascript
           </Heading>
-          <Text margin="2rem 0 0" textColor="secondary">
+          <Text margin="2rem 0 0" textColor="primary">
+            Déclaration d'une fonction
+          </Text>
+          <Image margin="-2rem auto" src={Function} width="700" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
+          <Heading textColor="secondary" caps fit>
+            Les patterns importants : en Javascript
+          </Heading>
+          <Text margin="2rem 0 0" textColor="primary">
             Arrow function<br />
             (Fonction fléchée)
           </Text>
-          <Image margin="-2rem auto" src={ArrowF} width="800" />
+          <Image margin="-1rem auto" src={ArrowF} width="1000" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgReact">
+          <Heading textColor="react" caps fit>
+            Comment créer un composant react ?
+          </Heading>
+          <Appear>
+            <Text margin="2rem 0 0" textColor="primary" textAlign="left">
+              Les imports
+            </Text>
+          </Appear>
+          <Appear>
+            <Text margin="2rem 0 0" textColor="primary" textAlign="left">
+              La classe React
+            </Text>
+          </Appear>
+          <Appear>
+            <Text margin="2rem 0 0" textColor="primary" textAlign="left">
+              La définition des propriétés
+            </Text>
+          </Appear>
+          <Appear>
+            <Text margin="2rem 0 0" textColor="primary" textAlign="left">
+              L'export de la classe
+            </Text>
+          </Appear>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgReact">
+          <Heading textColor="react" caps fit>
+            Comment créer un composant react ?
+          </Heading>
+          <Image src={PropsBox} />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgReact">
+          <Heading textColor="react" caps fit>
+            Comment créer un composant react ?
+          </Heading>
+          <Text margin="2rem 0 0" textColor="primary">
+            Stateless ou pas ?
+          </Text>
+          <Layout>
+            <Fill>
+              <Image src={ClassBox1} />
+            </Fill>
+            <Fill>
+              <Appear>
+                <Image src={ClassBox2} />
+              </Appear>
+            </Fill>
+          </Layout>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgReact">
+          <Heading textColor="react" caps fit>
+            Comment créer un composant react ?
+          </Heading>
+          <Layout>
+            <Fill>
+              <Image src={ClassButton1} />
+            </Fill>
+            <Fill>
+              <Image src={ClassButton2} />
+            </Fill>
+          </Layout>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgReact">
+          <Heading textColor="react" caps fit>
+            La vie des composants
+          </Heading>
+          <Text margin="2rem 0 0" textColor="primary" italic>
+            Lifecycle des composants
+          </Text>
+          <Image src={LifeCycle} />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgReact">
+          <Heading textColor="react" caps fit>
+            La gestion des event
+          </Heading>
+          <Text margin="2rem 0 0" textColor="primary" bold textAlign="left">
+            Par convention de nommage<br />on place handle + Event
+          </Text>
+          <Text margin="2rem 0 0" textColor="primary" textAlign="left">
+            onClick : handleClick()
+          </Text>
+          <Text margin="2rem 0 0" textColor="primary" textAlign="left">
+            onChange : handleChange()
+          </Text>
+          <Text margin="2rem 0 0" textColor="primary" textAlign="left">
+            onSubmit : handleSubmit()
+          </Text>
+          <Text margin="2rem 0 0" textColor="primary" textAlign="left">
+            onError : handleError()
+          </Text>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgReact">
+          <Heading textColor="react" caps fit>
+            La gestion des event
+          </Heading>
+          <Image src={InputChange} margin="-1rem auto" width="550" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgReact">
+          <Heading textColor="react" caps fit>
+            Récupérer des données
+          </Heading>
+          <Text margin="2rem 0 0" textColor="primary">
+            Dans le container List
+          </Text>
+          <Image src={ListBegin} margin="-1rem auto" width="550" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgReact">
+          <Heading textColor="react" caps fit>
+            Récupérer des données
+          </Heading>
+          <Text margin="2rem 0 0" textColor="primary">
+            On y ajoute la méthode componentDidMount()
+          </Text>
+          <Image src={ListFetch} margin="-1rem auto" width="750" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgReact">
+          <Heading textColor="react" caps fit>
+            Récupérer des données
+          </Heading>
+          <Text margin="2rem 0 0" textColor="primary">
+            On y ajoute un loader
+          </Text>
+          <Image src={ListLoader} margin="-1rem auto" width="550" />
         </Slide>
         <Slide transition={["side", "fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
