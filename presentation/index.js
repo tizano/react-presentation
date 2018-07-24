@@ -57,6 +57,13 @@ import InputChange from "../assets/images/code/input_change.svg";
 import ListBegin from "../assets/images/code/list_begin.svg";
 import ListFetch from "../assets/images/code/list_fetch.svg";
 import ListLoader from "../assets/images/code/list_loader.png";
+import FirstPromise from "../assets/images/code/first_promise.svg";
+import FirstFuncPromise from "../assets/images/code/first_func_promise.svg";
+import PromiseUse1 from "../assets/images/code/promise_use_1.svg";
+import PromiseUse2 from "../assets/images/code/promise_use_2.svg";
+import PromiseUse3 from "../assets/images/code/promise_use_3.svg";
+import Sync from "../assets/images/code/sync.svg";
+import Async from "../assets/images/code/async.svg";
 // import ReactPicture from "../assets/images/react-picture.png";
 // import City from "../assets/images/city.jpg";
 
@@ -398,6 +405,72 @@ export default class Presentation extends React.Component {
           </Text>
           <Image margin="-1rem auto" src={ArrowF} width="1000" />
         </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
+          <Heading textColor="secondary" caps fit>
+            Les patterns importants : en Javascript
+          </Heading>
+          <Text margin="2rem 0 0" textColor="primary" textAlign="left">
+            Le fonctionnement ASYNCHRONE
+          </Text>
+          <Appear>
+            <Text margin="2rem 0 2rem 0" textColor="primary" textAlign="left">
+              Les promesses (Promise)
+            </Text>
+          </Appear>
+          <Appear>
+            <BlockQuote>
+              <Quote textSize="2rem" lineHeight={2}>
+                L'objet Promise (pour « promesse ») est utilisé pour réaliser des traitements de façon asynchrone. Une promesse représente une valeur qui peut être disponible maintenant, dans le futur voire jamais.
+              </Quote>
+              <Cite textColor="primary">Définition</Cite>
+            </BlockQuote>
+          </Appear>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
+          <Heading textColor="secondary" caps fit>
+            Les patterns importants : en Javascript
+          </Heading>
+          <Text margin="2rem 0 0" textColor="primary" textAlign="left">
+            Exemple de promesse
+          </Text>
+          <Image margin="-2rem auto" src={FirstPromise} width="700" />
+          <Appear>
+            <Image margin="-4.5rem auto" src={FirstFuncPromise} width="580" />
+          </Appear>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
+          <Heading textColor="secondary" caps fit>
+            Les patterns importants : en Javascript
+          </Heading>
+          <Text margin="2rem 0 0" textColor="primary" textAlign="left">
+            Les callbacks d'une promesse
+          </Text>
+          <Image margin="-1rem auto" src={PromiseUse2} width="750" />
+          <Appear>
+            <Image margin="-4.5rem auto" src={PromiseUse1} width="650" />
+          </Appear>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
+          <Heading textColor="secondary" caps fit>
+            Les patterns importants : en Javascript
+          </Heading>
+          <Text margin="2rem 0 0" textColor="primary" textAlign="left">
+            Le chaînage d'une promesse
+          </Text>
+          <Image margin="-1rem auto" src={PromiseUse3} width="800" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
+          <Heading textColor="secondary" caps fit>
+            Les patterns importants : en Javascript
+          </Heading>
+          <Text margin="2rem 0 0" textColor="primary" textAlign="left">
+            La nouveauté avec ES7
+          </Text>
+          <Image margin="-1rem auto" src={Sync} width="650" />
+          <Appear>
+            <Image margin="-4.5rem auto" src={Async} width="650" />
+          </Appear>
+        </Slide>
         <Slide transition={["slide", "zoom"]} bgColor="bgReact">
           <Heading textColor="react" caps fit>
             Comment créer un composant react ?
@@ -542,8 +615,9 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
+            <Quote>
+              L'objet Promise (pour « promesse ») est utilisé pour réaliser des traitements de façon asynchrone. Une promesse représente une valeur qui peut être disponible maintenant, dans le futur voire jamais.
+            </Quote>
           </BlockQuote>
         </Slide>
       </Deck>
