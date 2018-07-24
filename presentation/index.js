@@ -56,7 +56,8 @@ import LifeCycle from "../assets/images/code/lifecycle.png";
 import InputChange from "../assets/images/code/input_change.svg";
 import ListBegin from "../assets/images/code/list_begin.svg";
 import ListFetch from "../assets/images/code/list_fetch.svg";
-import ListLoader from "../assets/images/code/list_loader.png";
+import ListAsync from "../assets/images/code/list_async.svg";
+import ListLoader from "../assets/images/code/list_loader.svg";
 import FirstPromise from "../assets/images/code/first_promise.svg";
 import FirstFuncPromise from "../assets/images/code/first_func_promise.svg";
 import PromiseUse1 from "../assets/images/code/promise_use_1.svg";
@@ -78,7 +79,8 @@ const theme = createTheme({
   quarternary: "#e1e1e1",
   bgOrange: "#f65b54",
   react: "#61dafb",
-  bgReact: "#282c34"
+  bgReact: "#282c34",
+  bgCss: "#f2c031"
 }, {
   primary: "Montserrat",
   secondary: "Helvetica"
@@ -363,7 +365,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
           <Heading textColor="secondary" caps fit>
-            Les patterns importants : en Javascript
+            Les patterns importants en Javascript
           </Heading>
           <Text margin="2rem 0 0" textColor="primary">
             Destructuring assignment<br />
@@ -373,7 +375,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
           <Heading textColor="secondary" caps fit>
-            Les patterns importants : en Javascript
+            Les patterns importants en Javascript
           </Heading>
           <Text margin="2rem 0 0" textColor="primary">
             Spread operator<br />
@@ -388,7 +390,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
           <Heading textColor="secondary" caps fit>
-            Les patterns importants : en Javascript
+            Les patterns importants en Javascript
           </Heading>
           <Text margin="2rem 0 0" textColor="primary">
             Déclaration d'une fonction
@@ -397,7 +399,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
           <Heading textColor="secondary" caps fit>
-            Les patterns importants : en Javascript
+            Les patterns importants en Javascript
           </Heading>
           <Text margin="2rem 0 0" textColor="primary">
             Arrow function<br />
@@ -407,7 +409,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
           <Heading textColor="secondary" caps fit>
-            Les patterns importants : en Javascript
+            Les patterns importants en Javascript
           </Heading>
           <Text margin="2rem 0 0" textColor="primary" textAlign="left">
             Le fonctionnement ASYNCHRONE
@@ -428,7 +430,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
           <Heading textColor="secondary" caps fit>
-            Les patterns importants : en Javascript
+            Les patterns importants en Javascript
           </Heading>
           <Text margin="2rem 0 0" textColor="primary" textAlign="left">
             Exemple de promesse
@@ -440,7 +442,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
           <Heading textColor="secondary" caps fit>
-            Les patterns importants : en Javascript
+            Les patterns importants en Javascript
           </Heading>
           <Text margin="2rem 0 0" textColor="primary" textAlign="left">
             Les callbacks d'une promesse
@@ -452,7 +454,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
           <Heading textColor="secondary" caps fit>
-            Les patterns importants : en Javascript
+            Les patterns importants en Javascript
           </Heading>
           <Text margin="2rem 0 0" textColor="primary" textAlign="left">
             Le chaînage d'une promesse
@@ -461,10 +463,10 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
           <Heading textColor="secondary" caps fit>
-            Les patterns importants : en Javascript
+            Les patterns importants en Javascript
           </Heading>
           <Text margin="2rem 0 0" textColor="primary" textAlign="left">
-            La nouveauté avec ES7
+            La nouveauté avec ES7 - async / await
           </Text>
           <Image margin="-1rem auto" src={Sync} width="650" />
           <Appear>
@@ -584,7 +586,16 @@ export default class Presentation extends React.Component {
           <Text margin="2rem 0 0" textColor="primary">
             On y ajoute la méthode componentDidMount()
           </Text>
-          <Image src={ListFetch} margin="-1rem auto" width="750" />
+          <Image src={ListFetch} margin="-1rem auto" width="700" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgReact">
+          <Heading textColor="react" caps fit>
+            Récupérer des données
+          </Heading>
+          <Text margin="2rem 0 0" textColor="primary">
+            Une autre manière de faire<br />avec async / await
+          </Text>
+          <Image src={ListAsync} margin="-1rem auto" width="850" />
         </Slide>
         <Slide transition={["slide", "zoom"]} bgColor="bgReact">
           <Heading textColor="react" caps fit>
@@ -593,7 +604,32 @@ export default class Presentation extends React.Component {
           <Text margin="2rem 0 0" textColor="primary">
             On y ajoute un loader
           </Text>
-          <Image src={ListLoader} margin="-1rem auto" width="550" />
+          <Image src={ListLoader} margin="-1rem auto" width="450" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgCss">
+          <Heading textColor="primary" caps fit>
+            Comment styliser un composant react ?
+          </Heading>
+          <Appear>
+            <Text margin="2rem 0 0" textColor="secondary" textAlign="left">
+              Avec <strong>CSS Modules</strong>
+            </Text>
+          </Appear>
+          <Appear>
+            <Text margin="2rem 0 0" textColor="secondary" textAlign="left">
+              Avec du <strong>JSS</strong> ou <strong>CSS in JS</strong>
+            </Text>
+          </Appear>
+          <Appear>
+            <Text margin="2rem 0 0" textColor="secondary" textAlign="left">
+              Avec <strong>styled components</strong>
+            </Text>
+          </Appear>
+          <Appear>
+            <Text margin="2rem 0 0" textColor="secondary" textAlign="left">
+              Avec <strong>glamorous</strong>
+            </Text>
+          </Appear>
         </Slide>
         <Slide transition={["side", "fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
@@ -603,22 +639,6 @@ export default class Presentation extends React.Component {
           <Heading size={4} textColor="secondary">Heading 4</Heading>
           <Heading size={5} textColor="secondary">Heading 5</Heading>
           <Text size={6} textColor="secondary">Standard text</Text>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>Standard List</Heading>
-          <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
-          </List>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Quote>
-              L'objet Promise (pour « promesse ») est utilisé pour réaliser des traitements de façon asynchrone. Une promesse représente une valeur qui peut être disponible maintenant, dans le futur voire jamais.
-            </Quote>
-          </BlockQuote>
         </Slide>
       </Deck>
     );
