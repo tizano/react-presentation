@@ -10,8 +10,6 @@ import {
   Deck,
   Heading,
   Image,
-  ListItem,
-  List,
   Quote,
   Layout,
   Fill,
@@ -65,6 +63,14 @@ import PromiseUse2 from "../assets/images/code/promise_use_2.svg";
 import PromiseUse3 from "../assets/images/code/promise_use_3.svg";
 import Sync from "../assets/images/code/sync.svg";
 import Async from "../assets/images/code/async.svg";
+import CssModules from "../assets/images/code/css_modules.svg";
+import CssCard from "../assets/images/code/css_card.svg";
+import Jss from "../assets/images/code/jss.svg";
+import Styled1 from "../assets/images/code/styled_1.svg";
+import Styled2 from "../assets/images/code/styled_2.svg";
+import Styled3 from "../assets/images/code/styled_3.svg";
+import Emotion1 from "../assets/images/code/emotion_1.svg";
+import Emotion2 from "../assets/images/code/emotion_2.svg";
 // import ReactPicture from "../assets/images/react-picture.png";
 // import City from "../assets/images/city.jpg";
 
@@ -627,9 +633,77 @@ export default class Presentation extends React.Component {
           </Appear>
           <Appear>
             <Text margin="2rem 0 0" textColor="secondary" textAlign="left">
-              Avec <strong>glamorous</strong>
+              Avec <strong>emotion</strong>
             </Text>
           </Appear>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgCss">
+          <Heading textColor="primary" caps size={6}>
+            CSS Modules
+          </Heading>
+          <Text margin="2rem 0 0" textColor="secondary">
+            Dans le composant Card
+          </Text>
+          <Image src={CssModules} margin="-2rem auto" width="850" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgCss">
+          <Heading textColor="primary" caps size={6}>
+            CSS Modules
+          </Heading>
+          <Text margin="2rem 0 0" textColor="secondary">
+            Le CSS du composant Card
+          </Text>
+          <Image src={CssCard} margin="-1rem auto" width="800" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgCss">
+          <Heading textColor="primary" caps size={6}>
+            Le CSS in JS ou JSS
+          </Heading>
+          <Text margin="2rem 0 0" textColor="secondary">
+            Le composant Box
+          </Text>
+          <Image src={Jss} margin="-1rem auto" width="900" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgCss">
+          <Heading textColor="primary" caps size={6}>
+            Styled components
+          </Heading>
+          <Text margin="2rem 0 0" textColor="secondary">
+            Le composant Button
+          </Text>
+          <Image src={Styled1} margin="-1rem auto" width="700" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgCss">
+          <Heading textColor="primary" caps size={6}>
+            Styled components
+          </Heading>
+          <Text margin="2rem 0 0" textColor="secondary">
+            Le composant Button
+          </Text>
+          <Layout>
+            <Fill>
+              <Image src={Styled2} margin="-1rem auto" />
+            </Fill>
+            <Fill>
+              <Image src={Styled3} margin="-1rem auto" />
+            </Fill>
+          </Layout>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgCss">
+          <Heading textColor="primary" caps size={6}>
+            Emotion
+          </Heading>
+          <Text margin="2rem 0 0" textColor="secondary">
+            Le composant CustomLink
+          </Text>
+          <Layout>
+            <Fill>
+              <Image src={Emotion1} margin="-1rem auto" />
+            </Fill>
+            <Fill>
+              <Image src={Emotion2} margin="-1rem auto" />
+            </Fill>
+          </Layout>
         </Slide>
         <Slide transition={["side", "fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
