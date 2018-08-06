@@ -24,6 +24,7 @@ import createTheme from "spectacle/lib/themes/default";
 // Pictures
 import MagicGif from "../assets/images/magic.gif";
 import WatchGif from "../assets/images/watch.gif";
+import WowGif from "../assets/images/wow.gif";
 import Tree from "../assets/images/tree.png";
 import PropsA from "../assets/images/code/props_html.svg";
 import PropsBox from "../assets/images/code/props_box.svg";
@@ -41,6 +42,7 @@ import Airbnb from "../assets/images/code/airbnb.svg";
 import Paypal from "../assets/images/code/paypal.svg";
 import Wix from "../assets/images/code/wix.svg";
 import Netflix from "../assets/images/code/netflix.svg";
+import TemplateString from "../assets/images/code/template_string.svg";
 import Destruct from "../assets/images/code/destruct.svg";
 import Spread from "../assets/images/code/spread.svg";
 import Spread2 from "../assets/images/code/spread_2.svg";
@@ -71,6 +73,12 @@ import Styled2 from "../assets/images/code/styled_2.svg";
 import Styled3 from "../assets/images/code/styled_3.svg";
 import Emotion1 from "../assets/images/code/emotion_1.svg";
 import Emotion2 from "../assets/images/code/emotion_2.svg";
+import Routes from "../assets/images/code/routes.svg";
+import RoutesApp from "../assets/images/code/routes_app.svg";
+import RouteParam1 from "../assets/images/code/route_param_1.svg";
+import RouteParam2 from "../assets/images/code/route_param_2.svg";
+import FloatBtn from "../assets/images/code/float_btn.png";
+import Modal from "../assets/images/code/modal.png";
 // import ReactPicture from "../assets/images/react-picture.png";
 // import City from "../assets/images/city.jpg";
 
@@ -84,6 +92,8 @@ const theme = createTheme({
   tertiary: "#03A9FC",
   quarternary: "#e1e1e1",
   bgOrange: "#f65b54",
+  bgRouter: "rgb(233, 73, 73)",
+  bgRedux: "rgb(116, 76, 188)",
   react: "#61dafb",
   bgReact: "#282c34",
   bgCss: "#f2c031"
@@ -368,6 +378,16 @@ export default class Presentation extends React.Component {
               </Appear>
             </Fill>
           </Layout>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
+          <Heading textColor="secondary" caps fit>
+            Les patterns importants en Javascript
+          </Heading>
+          <Text margin="2rem 0 0" textColor="primary">
+            Les template string<br />
+            (Modèle de libellé)
+          </Text>
+          <Image margin="-2rem auto" src={TemplateString} width="800" />
         </Slide>
         <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
           <Heading textColor="secondary" caps fit>
@@ -705,14 +725,117 @@ export default class Presentation extends React.Component {
             </Fill>
           </Layout>
         </Slide>
-        <Slide transition={["side", "fade"]} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>Typography</Heading>
-          <Heading size={1} textColor="secondary">Heading 1</Heading>
-          <Heading size={2} textColor="secondary">Heading 2</Heading>
-          <Heading size={3} textColor="secondary">Heading 3</Heading>
-          <Heading size={4} textColor="secondary">Heading 4</Heading>
-          <Heading size={5} textColor="secondary">Heading 5</Heading>
-          <Text size={6} textColor="secondary">Standard text</Text>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRouter">
+          <Heading textColor="primary" caps size={6}>
+            Le routing
+          </Heading>
+          <Text margin="2rem 0 0" textColor="secondary" textAlign="left">
+            Le package <strong>react-router</strong>
+          </Text>
+          <Text margin="2rem 0 0" textColor="secondary" textAlign="left">
+            Un Router qui englobe les routes
+          </Text>
+          <Text margin="2rem 0 0" textColor="secondary" textAlign="left">
+            Un composant Route
+          </Text>
+          <Text margin="2rem 0 0" textColor="secondary" textAlign="left">
+            Un composant pour les transitions
+          </Text>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRouter">
+          <Heading textColor="primary" caps size={6}>
+            Le routing
+          </Heading>
+          <Text margin="2rem 0 0" textColor="secondary">
+            Le fichier des routes
+          </Text>
+          <Image src={Routes} margin="-1rem auto" width="800" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRouter">
+          <Heading textColor="primary" caps size={6}>
+            Le routing
+          </Heading>
+          <Text margin="2rem 0 0" textColor="secondary">
+            Intégrer les routes dans l'app
+          </Text>
+          <Image src={RoutesApp} margin="-1rem auto" width="800" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRouter">
+          <Heading textColor="primary" caps size={6}>
+            Le routing
+          </Heading>
+          <Text margin="2rem 0 0" textColor="secondary">
+            Lire un paramètre de l'url
+          </Text>
+          <Image src={RouteParam1} margin="-1rem auto" width="800" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRouter">
+          <Heading textColor="primary" caps size={6}>
+            Le routing
+          </Heading>
+          <Text margin="2rem 0 0" textColor="secondary">
+            Lire un paramètre de l'url
+          </Text>
+          <Image src={RouteParam2} margin="-1rem auto" width="500" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Heading textColor="primary" caps size={6}>
+            Redux
+          </Heading>
+          <Image src={WowGif} margin="2rem auto" width="350" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Heading textColor="primary" caps size={6}>
+            Redux
+          </Heading>
+          <Text margin="2rem 0 0" textAlign="left">
+            Le package <strong>react-redux</strong>
+          </Text>
+          <Appear>
+            <Text margin="2rem 0 0" textAlign="left">
+              Un store
+            </Text>
+          </Appear>
+          <Appear>
+            <Text margin="2rem 0 0" textAlign="left">
+              Un historique
+            </Text>
+          </Appear>
+          <Appear>
+            <Text margin="2rem 0 0" textAlign="left">
+              Un reducer
+            </Text>
+          </Appear>
+          <Appear>
+            <Text margin="2rem 0 0" textAlign="left">
+              Des actions
+            </Text>
+          </Appear>
+          <Appear>
+            <Text margin="2rem 0 0" textAlign="left">
+              Connecter son composant
+            </Text>
+          </Appear>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Heading textColor="primary" caps size={6}>
+            Redux
+          </Heading>
+          <Text margin="2rem 0 0">
+            Une modal qui pop de partout
+          </Text>
+          <Layout>
+            <Fill>
+              <Appear>
+                <Image src={FloatBtn} margin="2rem auto" padding="1rem" />
+              </Appear>
+            </Fill>
+            <Fill>
+              <Appear>
+                <Image src={Modal} margin="2rem auto" padding="1rem" />
+              </Appear>
+            </Fill>
+          </Layout>
         </Slide>
       </Deck>
     );
