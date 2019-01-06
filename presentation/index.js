@@ -26,6 +26,8 @@ import MagicGif from "../assets/images/magic.gif";
 import WatchGif from "../assets/images/watch.gif";
 import WowGif from "../assets/images/wow.gif";
 import PoufGif from "../assets/images/pouf.gif";
+import FinishGif from "../assets/images/finish.gif";
+import EndGif from "../assets/images/end.gif";
 import Tree from "../assets/images/tree.png";
 import PropsA from "../assets/images/code/props_html.svg";
 import PropsBox from "../assets/images/code/props_box.svg";
@@ -44,7 +46,8 @@ import Paypal from "../assets/images/code/paypal.svg";
 import Wix from "../assets/images/code/wix.svg";
 import Netflix from "../assets/images/code/netflix.svg";
 import TemplateString from "../assets/images/code/template_string.svg";
-import Destruct from "../assets/images/code/destruct.svg";
+import Destruct1 from "../assets/images/code/destruct.svg";
+import Destruct2 from "../assets/images/code/destruct2.svg";
 import Spread from "../assets/images/code/spread.svg";
 import Spread2 from "../assets/images/code/spread_2.svg";
 import Function from "../assets/images/code/function.svg";
@@ -89,6 +92,9 @@ import AppReducer from "../assets/images/code/app_reducer.svg";
 import Modal1 from "../assets/images/code/modal_1.svg";
 import Modal2 from "../assets/images/code/modal_2.svg";
 import Modal3 from "../assets/images/code/modal_3.svg";
+import ReduxButton1 from "../assets/images/code/reduxButton1.svg";
+import ReduxButton2 from "../assets/images/code/reduxButton2.svg";
+import ReduxButton3 from "../assets/images/code/reduxButton3.svg";
 // import ReactPicture from "../assets/images/react-picture.png";
 // import City from "../assets/images/city.jpg";
 
@@ -339,6 +345,9 @@ export default class Presentation extends React.Component {
           <Text margin="2rem 0 0" textColor="secondary">
             Créer ou modifier le fichier <strong>.eslintrc.js</strong>
           </Text>
+          <Text margin="2rem 0 0" textColor="secondary" textSize="2rem">
+            Exemple de fichier <strong>.eslintrc.js</strong>
+          </Text>
           <Appear>
             <Image margin="-1rem auto" src={Eslint} width="800" />
           </Appear>
@@ -405,9 +414,19 @@ export default class Presentation extends React.Component {
           </Heading>
           <Text margin="2rem 0 0" textColor="primary">
             Destructuring assignment<br />
-            (Affectation par destructuration)
+            <small>(Affectation par destructuration)</small>
           </Text>
-          <Image margin="-2rem auto" src={Destruct} width="800" />
+          <Image margin="-2rem auto" src={Destruct1} width="800" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
+          <Heading textColor="secondary" caps fit>
+            Les patterns importants en Javascript
+          </Heading>
+          <Text margin="2rem 0 0" textColor="primary">
+            Destructuring assignment<br />
+            <small>(Affectation par destructuration)</small>
+          </Text>
+          <Image margin="-2rem auto" src={Destruct2} width="800" />
         </Slide>
         <Slide transition={["slide", "zoom"]} bgColor="bgOrange">
           <Heading textColor="secondary" caps fit>
@@ -861,11 +880,6 @@ export default class Presentation extends React.Component {
           </Appear>
           <Appear>
             <Text margin="2rem 0 0" textAlign="left">
-              Penser aux actions de la modal
-            </Text>
-          </Appear>
-          <Appear>
-            <Text margin="2rem 0 0" textAlign="left">
               Le fichier actionsTypes.js
             </Text>
           </Appear>
@@ -959,6 +973,56 @@ export default class Presentation extends React.Component {
             Redux : la modal
           </Heading>
           <Image src={Modal3} margin="-1rem auto" width="1000" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Heading textColor="primary" caps size={6}>
+            Redux : le retour du bouton 
+          </Heading>
+          <Image src={ReduxButton1} margin="-1rem auto" width="900" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Heading textColor="primary" caps size={6}>
+            Redux : le retour du bouton 
+          </Heading>
+          <Image src={ReduxButton2} margin="-1rem auto" width="750" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Heading textColor="primary" caps size={6}>
+            Redux : le retour du bouton 
+          </Heading>
+          <Image src={ReduxButton3} margin="-1rem auto" width="1100" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Image src={FinishGif} margin="2rem auto" width="350" />
+          <Heading textColor="primary" caps size={6}>
+            La présentation est finie ... mais
+          </Heading>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Heading textColor="primary" caps size={6}>
+            Ca évolue trop vite 🚀
+          </Heading>
+          <Appear>
+            <Text margin="2rem 0 0" textColor="secondary" textAlign="left">
+              Les <Link href="https://reactjs.org/docs/hooks-overview.html" target="_blank" textColor="primary" bold>HOOKS</Link>
+            </Text>
+          </Appear>
+          <Appear>
+            <Text margin="2rem 0 0" textColor="secondary" textAlign="left">
+              <Link href="https://codesandbox.io/s/github/HeadFox/input-test" target="_blank" textColor="primary" bold>Exemple d'utilisation</Link>
+            </Text>
+          </Appear>
+          <Appear>
+            <Text margin="2rem 0 0" textColor="secondary" textAlign="left">
+              <Link href="https://nextjs.org/learn/" target="_blank" textColor="primary" bold>Next.js</Link>
+            </Text>
+          </Appear>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Heading textColor="primary" caps size={6}>
+            Merci à tous
+          </Heading>
+          <Image src={EndGif} margin="2rem auto" width="350" />
         </Slide>
       </Deck>
     );
