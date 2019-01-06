@@ -25,6 +25,7 @@ import createTheme from "spectacle/lib/themes/default";
 import MagicGif from "../assets/images/magic.gif";
 import WatchGif from "../assets/images/watch.gif";
 import WowGif from "../assets/images/wow.gif";
+import PoufGif from "../assets/images/pouf.gif";
 import Tree from "../assets/images/tree.png";
 import PropsA from "../assets/images/code/props_html.svg";
 import PropsBox from "../assets/images/code/props_box.svg";
@@ -79,6 +80,15 @@ import RouteParam1 from "../assets/images/code/route_param_1.svg";
 import RouteParam2 from "../assets/images/code/route_param_2.svg";
 import FloatBtn from "../assets/images/code/float_btn.png";
 import Modal from "../assets/images/code/modal.png";
+import ActionsTypes from "../assets/images/code/actions_types.svg";
+import ModalAction from "../assets/images/code/modal_action.svg";
+import ModalReducer from "../assets/images/code/modal_reducer.svg";
+import RootReducer from "../assets/images/code/root_reducer.svg";
+import Store from "../assets/images/code/store.svg";
+import AppReducer from "../assets/images/code/app_reducer.svg";
+import Modal1 from "../assets/images/code/modal_1.svg";
+import Modal2 from "../assets/images/code/modal_2.svg";
+import Modal3 from "../assets/images/code/modal_3.svg";
 // import ReactPicture from "../assets/images/react-picture.png";
 // import City from "../assets/images/city.jpg";
 
@@ -836,6 +846,119 @@ export default class Presentation extends React.Component {
               </Appear>
             </Fill>
           </Layout>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Heading textColor="primary" caps size={6}>
+            Redux
+          </Heading>
+          <Text margin="2rem 0 0" textAlign="left">
+            Penser aux actions de la modal
+          </Text>
+          <Appear>
+            <Text margin="2rem 0 0" textAlign="left">
+              Ouvrir / fermer la modal
+            </Text>
+          </Appear>
+          <Appear>
+            <Text margin="2rem 0 0" textAlign="left">
+              Penser aux actions de la modal
+            </Text>
+          </Appear>
+          <Appear>
+            <Text margin="2rem 0 0" textAlign="left">
+              Le fichier actionsTypes.js
+            </Text>
+          </Appear>
+          <Appear>
+            <Image src={ActionsTypes} margin="-2rem auto" />
+          </Appear>
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Heading textColor="primary" caps size={6}>
+            Redux
+          </Heading>
+          <Text margin="2rem 0 0" textAlign="left">
+            Les fonctions qui créent les actions
+          </Text>
+          <Text margin="2rem 0 0" textAlign="left">
+            Le fichier modalAction.js
+          </Text>
+          <Image src={ModalAction} margin="-2rem auto" width="800" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Heading textColor="primary" caps size={6}>
+            Redux
+          </Heading>
+          <Text margin="2rem 0 0" textAlign="left">
+            La maj des données avec le reducer
+          </Text>
+          <Text margin="2rem 0 0" textAlign="left">
+            Le fichier modalReducer.js
+          </Text>
+          <Image src={ModalReducer} margin="-2rem auto" width="600" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Heading textColor="primary" caps size={6}>
+            Redux
+          </Heading>
+          <Text margin="2rem 0 0" textAlign="left">
+            Appeler notre reducer
+          </Text>
+          <Text margin="2rem 0 0" textAlign="left">
+            Le fichier rootReducer.js
+          </Text>
+          <Image src={RootReducer} margin="-2rem auto" width="700" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Heading textColor="primary" caps size={6}>
+            Redux
+          </Heading>
+          <Text margin="2rem 0 0" textAlign="left">
+            Stocker les données
+          </Text>
+          <Text margin="2rem 0 0" textAlign="left">
+            Le fichier store.js
+          </Text>
+          <Image src={Store} margin="-2rem auto" width="800" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Heading textColor="primary" caps size={6}>
+            Redux
+          </Heading>
+          <Text margin="2rem 0 0" textAlign="left">
+            On englobe notre app avec redux
+          </Text>
+          <Text margin="2rem 0 0" textAlign="left">
+            Le fichier App.js
+          </Text>
+          <Image src={AppReducer} margin="-2rem auto" width="750" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Heading textColor="primary" caps size={6}>
+            Redux
+          </Heading>
+          <Text margin="2rem 0 0">
+            On arrive presque à la fin 🤕🤒🤯
+          </Text>
+          <Image src={PoufGif} margin="2rem auto" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Heading textColor="primary" caps size={6}>
+            Redux : la modal
+          </Heading>
+          <Image src={Modal1} margin="-1rem auto" width="750" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Heading textColor="primary" caps size={6}>
+            Redux : la modal
+          </Heading>
+          <Image src={Modal2} margin="-1rem auto" width="650" />
+        </Slide>
+        <Slide transition={["slide", "zoom"]} bgColor="bgRedux">
+          <Heading textColor="primary" caps size={6}>
+            Redux : la modal
+          </Heading>
+          <Image src={Modal3} margin="-1rem auto" width="1000" />
         </Slide>
       </Deck>
     );
