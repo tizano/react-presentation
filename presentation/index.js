@@ -1004,7 +1004,12 @@ export default class Presentation extends React.Component {
           </Heading>
           <Appear>
             <Text margin="2rem 0 0" textColor="secondary" textAlign="left">
-              Les <Link href="https://reactjs.org/docs/hooks-overview.html" target="_blank" textColor="primary" bold>HOOKS</Link>
+              Le <Link href="https://reactjs.org/docs/context.html" target="_blank" textColor="primary" bold>Context</Link>
+            </Text>
+          </Appear>
+          <Appear>
+            <Text margin="2rem 0 0" textColor="secondary" textAlign="left">
+              Les <Link href="https://reactjs.org/docs/hooks-overview.html" target="_blank" textColor="primary" bold>Hooks</Link>
             </Text>
           </Appear>
           <Appear>
