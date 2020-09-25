@@ -1,5 +1,6 @@
 # A React presentation
 This project is build with [Spectacle](https://github.com/FormidableLabs/spectacle)
+[Available here](http://react-pres.mathieuscarlatella.fr/#/)
 
 The goal of this project is to show how to build a react app with all workflow it needs 🔥🔥
 
